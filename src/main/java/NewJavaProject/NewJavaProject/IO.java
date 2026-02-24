@@ -3,7 +3,7 @@ package NewJavaProject.NewJavaProject;
 public class IO 
 {
 // classes.
-	private static Framework framework = null;
+	private static Framework _framework = null;
 	
 // registers.
 
@@ -16,10 +16,9 @@ public class IO
 	// static.
 	public static Framework initialise_Program()
 	{
-		framework = new Framework();
-		while(framework == null) { }
-		framework.initalise(framework);
-		return framework;
+		create_Framework();
+		get_Framework().initalise(get_Framework());
+		return get_Framework();
 	}
 		// get.
 		// set.
@@ -29,6 +28,19 @@ public class IO
 		// get.
 		// set.
 	// static.
+	private static void create_Framework() 
+	{
+		set_Framework(new Framework());
+		while(get_Framework() == null) { }
+	}
 		// get.
+	private static Framework get_Framework()
+	{
+		return _framework;
+	}
 		// set.
+	private static void set_Framework(Framework newClass) 
+	{
+		_framework = newClass;
+	}
 }
