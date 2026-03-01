@@ -12,17 +12,17 @@ Version: 2026-03 M3 (4.39.0 M3)
 Build id: 20260219-0755
 
 ## Dependencies.
-## Eclipse.
+### Eclipse.
  - https://www.eclipse.org/downloads/
  
-## The Java Development Kit (JDK).
+### The Java Development Kit (JDK).
  - https://www.eclipse.org/downloads/packages/ 
 
-## Apache Maven. 
+### Apache Maven. 
 ~~~~
 sudo apt install maven
 ~~~~
  
-## Java Native Access Library
+### Java Native Access Library
  - https://github.com/java-native-access/jna
    
