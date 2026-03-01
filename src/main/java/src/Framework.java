@@ -11,7 +11,7 @@ public class Framework
 // constructor.
 	public Framework() 
 	{
-		create_App();
+		stati_create_App();
 	}
 	
 // public.
@@ -35,9 +35,9 @@ public class Framework
 		// get.
 		// set.
 	// static.
-	private static void create_App()
+	private static void stat_create_App()
 	{
-		set_App(new App());
+		private static App _App = new App();
 		while(stat_get_App() == null) { }
 	}
 		// get.
@@ -46,8 +46,4 @@ public class Framework
 		return _App;
 	}
 		// set.
-	private static void set_App(App newClass) 
-	{
-		_App = newClass;
-	}
 }

@@ -19,12 +19,12 @@ public class Execute
 	// dynamic.
 	public void initalise(Execute obj)
 	{
-		create_Execute_Control();
+		stat_create_Execute_Control();
 	}
 		// get.
 	public Execute_Control get_Execute_Control()
 	{
-		return _Execute_Control;
+		return stat_get_Execute_Control;
 	}
 		// set.
 	// static.
@@ -36,9 +36,9 @@ public class Execute
 		// get.
 		// set.
 	// static.
-	private static void create_Execute_Control()
+	private static void stat_create_Execute_Control()
 	{
-		set_Execute_Control(new Execute_Control());
+		private static Execute_Control _Execute_Control = new Execute_Control();
 		while(stat_get_Execute_Control() == null) { }
 	}
 		// get.
@@ -47,8 +47,4 @@ public class Execute
 		return _Execute_Control;
 	}
 		// set.
-	private static void set_Execute_Control(Execute_Control newClass)
-	{
-		_Execute_Control = newClass;
-	}
 }

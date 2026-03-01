@@ -18,10 +18,10 @@ public class App
 // constructor.
 	public App() 
 	{
-		create_Global();
-		create_Algorithm();
-		create_Data();
-		create_Execute();
+		stat_create_Global();
+		stat_create_Algorithm();
+		stat_create_Data();
+		stat_create_Execute();
 	}
 	
 // public.
@@ -55,22 +55,22 @@ public class App
 	// static.
 	private static void create_Algorithm()
 	{
-		set_Algorithms(new Algorithms());
+		private static Algorithms _Algorithms = new Algorithms();
 		while(stat_get_Algorithms() == null) { }
 	}
 	private static void create_Data()
 	{
-		set_Data(new Data());
+		private static Data _Data = new Data();
 		while(stat_get_Data() == null) { }
 	}
 	private static void create_Execute()
 	{
-		set_Execute(new Execute());
+		private static Execute _Execute = new Execute();
 		while(stat_get_Execute() == null) { }
 	}
 	private static void create_Global()
 	{
-		set_Global(new Global());
+		private static Global _Global = new Global();
 		while(stat_get_Global() == null) { }
 	}
 		// get.
@@ -91,20 +91,4 @@ public class App
 		return _Global;
 	}
 		// set.
-	private static void set_Algorithms(Algorithms newClass) 
-	{
-		_Algorithms = newClass;
-	}
-	private static void set_Data(Data newClass) 
-	{
-		_Data = newClass;
-	}
-	private static void set_Execute(Execute newClass) 
-	{
-		_Execute = newClass;
-	}
-	private static void set_Global(Global newClass) 
-	{
-		_Global = newClass;
-	}
 }

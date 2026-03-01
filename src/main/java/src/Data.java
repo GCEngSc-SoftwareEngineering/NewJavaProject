@@ -14,8 +14,8 @@ public class Data
 // constructor.
 	public Data() 
 	{
-		create_Input();
-		create_Output();
+		stat_create_Input();
+		stat_create_Output();
 	}
 // public.
 	// dynamic.
@@ -38,14 +38,14 @@ public class Data
 		// get.
 		// set.
 	// static.
-	private static void create_Input()
+	private static void stat_create_Input()
 	{
-		set_Input(new Input());
+		private static Input _Input = new Input();
 		while(stat_get_Output() == null) { }
 	}
-	private static void create_Output()
+	private static void stat_create_Output()
 	{
-		set_Output(new Output());
+		private static Output _Output = new Output();
 		while(stat_get_Input() == null) { }
 	}
 		// get.
@@ -58,12 +58,4 @@ public class Data
 		return _Output;
 	}
 		// set.
-	private static void set_Input(Input newClass)
-	{
-		_Input = newClass;
-	}
-	private static void set_Output(Output newClass)
-	{
-		_Output = newClass;
-	}
 }

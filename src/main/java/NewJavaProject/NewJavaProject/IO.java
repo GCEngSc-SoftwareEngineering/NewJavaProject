@@ -30,19 +30,15 @@ public class IO
 		// get.
 		// set.
 	// static.
-	private static void create_Framework() 
+	private static void stat_create_Framework() 
 	{
-		set_Framework(new Framework());
+		private static Framework _framework = new Framework());
 		while(get_Framework() == null) { }
 	}
 		// get.
-	private static Framework get_Framework()
+	private static Framework stat_get_Framework()
 	{
 		return _framework;
 	}
 		// set.
-	private static void set_Framework(Framework newClass) 
-	{
-		_framework = newClass;
-	}
 }
